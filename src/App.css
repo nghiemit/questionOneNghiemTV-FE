@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+}
+.header-bottom {
+  padding-top: 20px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.box-search {
+  display: flex;
+  gap: 13px;
+}
+.table-product {
+  padding: 20px;
+  height: 100vh;
+  background: #e1e1e1;
+}
+.header {
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.main {
+  position: relative;
+  background: white;
+  border-radius: 10px;
+  margin-top: 13px;
+}
+.pagination {
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.pagination select {
+  height: 38px;
+  width: 60px;
+}
+.pagination p {
+  font-size: 20px;
+}
+.pagination a {
+  margin: 0 2px;
+  cursor: pointer;
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.pagination .number-page {
+  justify-content: center;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.pagination a.active {
+  background-color: #666565;
+  color: white;
+  border-radius: 5px;
+}
+.number-page button {
+  cursor: pointer;
+  padding: 0 15px;
+  border-radius: 5px;
+}
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+.loadding {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 3px solid red;
+  border-right: 3px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+p.total {
+  padding: 30px 0 15px;
+  font-size: 20px;
+  font-weight: 500;
+}
+select,input {
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #666565;
+}
+.box-search button {
+  cursor: pointer;
+  background: #000;
+  color: white;
+  border: 1px solid #666565;
+  border-radius: 5px;
+  padding: 0 15px;
+}
+.box-search input {
+  width: 250px;
+  height: 24px;
+}
+.header-top h2 {
+  margin-bottom: 12px;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
